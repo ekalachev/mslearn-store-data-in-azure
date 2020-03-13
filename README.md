@@ -1,3 +1,8 @@
+ - Create resource group
+ 
+    - az group create --name "file-uploader-dev-rg" --location "West Europe" 
+    
+
  - Create azure storage account
  
    If you use Azure-CLI:
