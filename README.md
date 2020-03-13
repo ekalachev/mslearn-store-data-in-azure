@@ -1,3 +1,8 @@
+ - Create resource group
+ 
+    - az group create --name "file-uploader-dev-rg" --location "West Europe" 
+    
+
  - Create azure storage account
  
    If you use Azure-CLI:
@@ -16,11 +21,11 @@
     
         - az appservice plan create --name blob-exercise-plan --resource-group [your-resourse-group] --sku FREE --location centralus
         
-        - az webapp create --name <your-unique-app-name> --plan blob-exercise-plan --resource-group [your-resourse-group]
+        - az webapp create --name [your-unique-app-name] --plan blob-exercise-plan --resource-group [your-resourse-group]
         
-        - CONNECTIONSTRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)
+        - $CONNECTIONSTRING=$(az storage account show-connection-string --name [your-unique-storage-account-name] --output tsv)
         
-        - az webapp config appsettings set --name <your-unique-app-name> --resource-group [your-resourse-group] --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
+        - az webapp config appsettings set --name [your-unique-app-name] --resource-group [your-resourse-group] --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
     
     - Deploy your project:
     
