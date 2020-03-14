@@ -28,6 +28,6 @@
   - az webapp config appsettings set --name ("production-" + $webAppName) --resource-group $group --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
 
 ### after these steps, you can setup your environment on https://dev.azure.com/
-[img](https://github.com/ekalachev/mslearn-store-data-in-azure/blob/master/images/cicd.png)
+![img](https://github.com/ekalachev/mslearn-store-data-in-azure/blob/master/images/cicd.png)
 
 
