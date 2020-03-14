@@ -1,3 +1,5 @@
+# CI/CD Pipelines:
+
 - create variables:
   - $group = "file-uploader-dev-rg"
   - $location = "West Europe"
